@@ -37,7 +37,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
         try {
-            startActivityForResult(builder.build(PlacePickerActivity.this), PLACE_PICKER_REQUEST);
+            startActivityForResult(builder.build(this), PLACE_PICKER_REQUEST);
         } catch (GooglePlayServicesRepairableException e) {
             e.printStackTrace();
         } catch (GooglePlayServicesNotAvailableException e) {
